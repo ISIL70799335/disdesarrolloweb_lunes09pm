@@ -1,0 +1,594 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: raleway_thin;
+}
+
+@font-face {
+    font-family: raleway_thin;
+    src: url(../1_portada/fuentes/Raleway_ThinVF.ttf);
+}
+/* -------------------- MENU START -------------------- */
+
+header {
+    width: 100%;
+    background-color: #217373;
+    /* Es flex Padre*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center ;
+    /* para que el menu se quede pegado arriba */
+    position: sticky;
+    z-index: 9;
+    top: 0;
+}
+
+/* MENU PRIMERA PARTE */
+
+#menu_logo{
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+#menu_logo img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+#menu_logo a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 0 1px 0 1px;
+    vertical-align: middle;
+}
+
+/* MENU SEGUNDA PARTE */
+
+#menu_bar{
+    background-color: #173540;
+    width: 100%;
+
+}
+
+#menu_links{
+    max-width: 1200px;
+    width: 70%;
+    list-style: none;
+    /* flex padre para los links */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* para mandar al hijo a la derecha */
+    justify-content: flex-end;
+    margin-left: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+ 
+#menu_links a{
+    text-decoration: none;
+    height: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo para los a */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+
+#menu_links a:hover{
+    color: #84b026;
+    transition: 0.5s;
+}
+
+
+/* -------------------- MENU END -------------------- */
+
+
+
+main{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /*Flex padre*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+body{
+    background-image: url(Imagenes/logo_Kirubank.PNG);
+}
+
+
+
+/* header{
+    width: 100%;
+    background-color: greenyellow;
+    padding: 20px; */
+    /*flex padre*/
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo img{
+    width: 100px;
+    vertical-align: middle;
+}
+
+#logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+#menu1{
+    width: 60%;
+    background-color: beige; */
+    /*flex padre*/
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+/* #menu1 a{
+    text-decoration: none;
+    background-color: darkgreen;
+    color: black;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center; */
+    /*flex hijo*/
+    /* flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#menu1 a:hover{
+    background-color: beige;
+    color: black;
+} */
+
+/* CONTENEDOR 1 */
+
+/* === CONTENEDOR 1 === */
+
+/* CONTENEDOR 1 */
+.contenedor1 {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #FFF6DA;
+  display: flex;
+  justify-content: center;
+}
+
+#caja1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f2cc8f;
+  border-radius: 12px;
+  justify-content: space-evenly;
+}
+
+.Introducción {
+  flex: 0 0 350px;
+  max-width: 350px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 25px;
+}
+
+.caja_carousel {
+  flex: 0 0 450px;
+  max-width: 450px;
+  height: 450px;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.caja_carousel .carousel-inner,
+.caja_carousel .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.caja_carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/* CONTENEDOR 2 */
+.contenedor2 {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #FFF6DA;
+}
+
+#mapa_local {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Caja del mapa */
+.mapa {
+  flex: 1 1 45%;
+  background-color: #dda15e;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.mapa h2{
+  text-align: center;
+}
+
+/* Mapa responsive dentro de su contenedor */
+#mapa {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: #eaeaea;
+  border: 2px solid #333;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  z-index: 0 !important;
+}
+
+
+/* Caja de centros de atención */
+.centros_de_atencion {
+  flex: 1 1 50%;
+  background-color: #f2cc8f;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Cada establecimiento */
+
+
+.establecimiento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.Bancos, .Agentes {
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 25px;
+}
+
+/* Listas */
+.Bancos ul, .Agentes ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.Bancos li, .Agentes li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+
+/* CONTENEDOR 3 */
+.contenedor3 {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #FFF6DA;
+  display: flex;
+  justify-content: center;
+}
+
+#contacto {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #e36414;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-self: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form button:hover {
+  background-color: #dda15e;
+}
+
+
+/* SUBTÍTULOS */
+.contenedor1 h2, .contenedor2 h2, .contenedor3 h2 {
+  font-weight: bold;
+}
+
+/* * === RESPONSIVE: MÓVIL Y TABLET === */ 
+
+@media (max-width: 992px) {
+  #caja1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Introducción, .caja_carousel {
+    max-width: 90%;
+    flex: 0 0 auto;
+  }
+
+  .caja_carousel {
+    height: 300px;
+  }
+
+  #mapa_local {
+    flex-direction: column;
+  }
+
+  .mapa, .centros_de_atencion {
+    flex: 1 1 100%;
+  }
+
+  #mapa {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+  }
+
+  .establecimiento {
+    flex: 1 1 100%;
+  }
+
+  .Bancos, .Agentes {
+    margin: 10px 0;
+  }
+
+  #contacto {
+    max-width: 90%;
+  }
+}
+
+
+
+/* 
+footer{
+    width: 100%;
+    background-color: greenyellow;
+    padding: 20px; */
+    /*flex padre*/
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#menu2 {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+
+} */
+
+
+/* -------------------- FOOTER START -------------------- */
+
+#footer_width{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #173540;
+}
+
+#footer_main{
+    max-width: 1920px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#footer_logo{
+    width: 100%;
+    padding: 25px 20px 0 20px;
+    align-items: center;
+}
+
+#footer_logo img{
+    width: 200px;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+#footer_logo a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#footer_body{
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+#footer_contactos{
+    padding-bottom: 20px;
+}
+
+
+#footer_siguenos{
+    width: 150px;
+    padding: 10px 0 10px 0;
+}
+
+#footer_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#footer_social a{
+    padding: 10px 0 10px 0;
+}
+
+#footer_social img{
+    max-width: 25px;
+}
+
+#footer_links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 50px;
+}
+
+#footer_links a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+#footer_trademark{
+    width: 100%;
+    padding: 0 20px 25px 20px;
+
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 900px){
+    
+    #footer_body{
+    flex-direction: column;
+    }
+
+    
+    #footer_contactos{
+        padding-bottom: 50px;
+    }
+
+    #footer_links{
+        align-items: center;
+    }
+
+    #footer_logo{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #footer_logo img{
+        width: 300px;
+    }
+
+
+    #footer_siguenos{
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    
+    #footer_siguenos h3{
+        text-align: center;
+
+        
+    }
+
+
+}
+/* -------------------- FOOTER END -------------------- */
+
+/* Responsive: acomoda en columna en pantallas chicas */
+@media (max-width: 768px) {
+  #Caja1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
