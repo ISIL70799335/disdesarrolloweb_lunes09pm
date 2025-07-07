@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirubank</title>
+    <link rel="stylesheet" href="1_portada/style.css">
+    <link rel="stylesheet" href="1_portada/scripts/bootstrap_min.css">
+    <script src="1_portada/scripts/bootstrap_bundle_min.js"></script>
+</head>
+<body>
+    <header>
+        <section id="menu_logo">
+                <div>
+                    <a href="index.html"><img src="1_portada/imagenes/logo_kirubank_header.png" alt="" ></a>
+                    <a href="index.html">Kirubank</a>
+                </div>
+
+                <div>
+                    <a href="index.html">EN / ES</a>
+                    <img src="1_portada/imagenes/logo_temp.png" alt="" >
+                </div>
+        </section>
+        <nav id="menu_bar">
+            <div id="menu_links">
+                <a href="2_productos/index.html">Productos</a>
+                <a href="3_servicios/index.html">Servicios</a>
+                <a href="4_canalesdeatencion/index.html">Canales de Atención</a>
+                <a href="5_blog/index.html">Blog</a>
+                <a href="6_ayuda/index.html">Ayuda</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section id="carousel_main">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <a href="4_canalesdeatencion/index.html">
+                    <div class="carousel-item active">
+                        <img src="1_portada/imagenes/carousel_01.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="carousel_text_main">
+                            <h5 class="carousel_text" id="car_01">Encuentranos</h5>
+                            <p class="carousel_text" id="car_02">Conoce nuestras nuevas sedes</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="2_productos/index.html">
+                    <div class="carousel-item">
+                        <img src="1_portada/imagenes/carousel_02.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="carousel_text_main">
+                            <h5 class="carousel_text" id="car_03">Sorteos Mensuales </h5>
+                            <p class="carousel_text" id="car_04">Participa sacando un prestamo</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="6_ayuda/index.html">
+                    <div class="carousel-item">
+                        <img src="1_portada/imagenes/carousel_03.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="carousel_text_main">
+                            <h5 class="carousel_text" id="car_05">¿Tienes dudas? </h5>
+                            <p class="carousel_text" id="car_06">Entra a nuestro centro de ayuda</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+        <section id="novedades_main">
+            <div id="novedades_header">
+                <h2>Novedades</h2>
+            </div>
+
+            <div id="novedades_body">
+                <article class="novedades_content">
+                        <img src="1_portada/imagenes/novedades_1.jpg" alt="">
+                        <p>Utiliza nuestra actualizada <br> KiruApp</p>
+                        <a href="3_servicios/index.html">Leer Más</a>
+                </article>
+
+                <article class="novedades_content">
+                    <img src="1_portada/imagenes/novedades_2.jpg" alt="">
+                    <p>Conoce nuestros nuevos<br>Prestamos Kirubank</p>
+                    <a href="2_productos/index.html">Leer Más</a>
+                </article>
+                
+                <article class="novedades_content">
+                    <img src="1_portada/imagenes/novedades_3.jpg" alt="">
+                    <p>Descubre nuestras nuevas<br>tarjetas Kirubank</p>
+                    <a href="2_productos/index.html">Leer Más</a>
+                </article>                
+
+            </div>
+
+            <div id="novedades_footer">
+                <a href="2_productos/index.html">Ver otras Novedades</a>
+            </div>
+            
+        </section>
+
+        <section id="buscanos_main">
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.2877697320346!2d-77.02777959626827!3d-12.125287483187323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81c605ea5e1%3A0x17328a8b49d37914!2sISIL%20-%20Miraflores!5e0!3m2!1ses!2spe!4v1751321837864!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="4_canalesdeatencion/index.html " id="atencion_antes">¡No dudes en Contactarnos!</a>
+                <a href="4_canalesdeatencion/index.html " id="atencion_despues">¡Has Click Aqui!</a>
+            </div>
+            
+        </section>
+
+
+
+        <section id="blog_main">
+            <div id="blog_header">
+                <h2>¡Lee Nuestro Kirublog!</h2>
+            </div>
+
+            <div id="blog_content">
+                <div id="blog_content_a">
+                    <a href="5_blog/index.html" class="blog_content_a_box">
+                        <img src="1_portada/imagenes/blog_smishing.jpeg" alt="">
+                        <p>¿Qué es el Smishing y cómo prevenirlo?</p>
+                    </a>
+                </div>
+
+                <div id="blog_content_b">
+                    <a href="5_blog/index.html" class="blog_content_b_box">
+                        <img src="1_portada/imagenes/blog_declaracion.jpeg" alt="">
+                        <p>Declaración Anual 2025: Guía Fiscal Perú</p>
+                    </a>
+
+                    <a href="5_blog/index.html" class="blog_content_b_box">
+                        <img src="1_portada/imagenes/blog_habitos.jpeg" alt="">
+                        <p>Cómo enseñar hábitos financieros a tus hijos</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+</main>
+<footer id="footer_width">
+        <section id="footer_main">
+            <div id="footer_logo">
+                        <img src="1_portada/imagenes/logo_kirubank_footer.png" alt="" >
+            </div>   
+
+            <section id="footer_body">
+                <div id="footer_left">
+                    <div id="footer_contactos">
+                        <h3>Contactanos:</h3>
+                        <p>(+51) 999 999 999</p>
+                        <p>(01) 444 4444</p>
+                    </div>
+                    <div id="footer_siguenos">
+                        <h3>Siguenos en</h3>
+                        <div id="footer_social">
+                            <a href="#"> 
+                                <img src="1_portada/imagenes/icon_fb.png" alt="1">
+                            </a>
+                            <a href="#"> 
+                                <img src="1_portada/imagenes/icon_tiktok.png" alt="1">
+                            </a>
+                            <a href="#"> 
+                                <img src="1_portada/imagenes/icon_twitter.png" alt="1">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <nav id="footer_menu">
+                    <div id="footer_links">
+                        <a href="2_productos/index.html">Productos</a>
+                        <a href="3_servicios/index.html">Servicios</a>
+                        <a href="4_canalesdeatencion/index.html">Canales de Atención</a>
+                        <a href="5_blog/index.html">Blog</a>
+                        <a href="6_ayuda/index.html">Ayuda</a>
+                    </div>
+                </nav>
+            </section>
+
+            <div id="footer_trademark">
+                <p>&reg; 2025 Kirubank</p>
+            </div>
+
+        </section>
+</footer>
+
+
+</body>
+</html>

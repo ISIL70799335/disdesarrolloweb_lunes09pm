@@ -1,0 +1,360 @@
+/* -------------------- Fuente y Reset -------------------- */
+@font-face {
+  font-family: raleway_thin;
+  src: url(../1_portada/fuentes/Raleway_ThinVF.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: raleway_thin;
+}
+
+p {
+  text-align: justify;
+}
+
+/* -------------------- MENU START -------------------- */
+header {
+    width: 100%;
+    background-color: #217373;
+    /* Es flex Padre*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center ;
+    /* para que el menu se quede pegado arriba */
+    position: sticky;
+    z-index: 9;
+    top: 0;
+}
+
+/* MENU PRIMERA PARTE */
+
+#menu_logo{
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+#menu_logo img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+#menu_logo a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 0 1px 0 1px;
+    vertical-align: middle;
+}
+
+/* MENU SEGUNDA PARTE */
+
+#menu_bar{
+    background-color: #173540;
+    width: 100%;
+
+}
+
+#menu_links{
+    max-width: 1200px;
+    width: 70%;
+    list-style: none;
+    /* flex padre para los links */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* para mandar al hijo a la derecha */
+    justify-content: flex-end;
+    margin-left: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+ 
+#menu_links a{
+    text-decoration: none;
+    height: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo para los a */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+
+#menu_links a:hover{
+    color: #84b026;
+    transition: 0.5s;
+}
+
+
+/* -------------------- MENU END -------------------- */
+
+main {
+  padding: 20px;
+  background-image: url(imagenes/fondo_general_krb.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #173540;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeInDown 1s ease-out;
+  position: relative;
+}
+
+/* -------------------- CONTENEDOR -------------------- */
+#contenedor {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* -------------------- CAJAS -------------------- */
+.caja {
+  width: calc(48% - 10px);
+  background-color: rgba(33, 115, 115, 0.9);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInDown 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.caja:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.caja h2 {
+  padding: 20px;
+  color: black;
+}
+
+.caja p {
+  padding: 0 20px 20px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Animación delay */
+.caja:nth-child(1) { animation-delay: 0.1s; }
+.caja:nth-child(2) { animation-delay: 0.2s; }
+.caja:nth-child(3) { animation-delay: 0.3s; }
+.caja:nth-child(4) { animation-delay: 0.4s; }
+.caja:nth-child(5) { animation-delay: 0.5s; }
+.caja:nth-child(6) { animation-delay: 0.6s; }
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+  body {
+    background-size: auto;
+    background-position: top;
+  }
+
+  .caja {
+    width: 100%;
+  }
+}
+
+/* -------------------- FOOTER -------------------- */
+#footer_width{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #173540;
+}
+
+#footer_main{
+    max-width: 1920px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#footer_logo{
+    width: 100%;
+    padding: 25px 20px 0 20px;
+    align-items: center;
+}
+
+#footer_logo img{
+    width: 200px;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+#footer_logo a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#footer_body{
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+#footer_contactos{
+    padding-bottom: 20px;
+}
+
+
+#footer_siguenos{
+    width: 150px;
+    padding: 10px 0 10px 0;
+}
+
+#footer_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#footer_social a{
+    padding: 10px 0 10px 0;
+}
+
+#footer_social img{
+    max-width: 25px;
+}
+
+#footer_links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 50px;
+}
+
+#footer_links a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+#footer_trademark{
+    width: 100%;
+    padding: 0 20px 25px 20px;
+
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 900px){
+    
+    #footer_body{
+    flex-direction: column;
+    }
+
+    
+    #footer_contactos{
+        padding-bottom: 50px;
+    }
+
+    #footer_links{
+        align-items: center;
+    }
+
+    #footer_logo{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #footer_logo img{
+        width: 300px;
+    }
+
+
+    #footer_siguenos{
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    
+    #footer_siguenos h3{
+        text-align: center;
+
+        
+    }
+
+
+}
+
+
+.caja ul {
+  list-style: none;         
+  padding: 0 20px 20px 20px; 
+  margin: 0;
+}
+
+.caja li {
+  margin-bottom: 10px;      
+  position: relative;
+  padding-left: 16px;       
+}
+
+.caja li::before {
+  content: "•";             
+  position: absolute;
+  left: 0;
+  color: #217373;           
+  font-weight: bold;
+}
+
+
+/* -------------------- ANIMACIONES -------------------- */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
