@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>mobile_top_up_48</title>
+    <desc>Created with Sketch.</desc>
+    <g id="mobile_top_up_48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-Illustrative-/-Filled-/-Colour-/-Mobile-Top-up-/-48px">
+            <g id="Mobile-top-up-48px">
+                <polygon id="bounds" points="0 0 48 0 48 48 0 48"></polygon>
+                <path d="M32.6749614,48.0010999 L13,48 C11.3431458,48 10,46.6568542 10,45 L10,3 C10,1.34314575 11.3431458,7.40978655e-15 13,7.10542736e-15 L35,7.10542736e-15 C36.6568542,6.80106817e-15 38,1.34314575 38,3 L38.0001946,28.0448137 C36.9508152,28.1393357 35.9439533,28.3811959 35.0004507,28.7495525 L35,4 C35,3.44771525 34.5522847,3 34,3 L34,3 L14,3 C13.4477153,3 13,3.44771525 13,4 L13,4 L13,38 C13,38.5522847 13.4477153,39 14,39 L14,39 L28,39 L28,39 C28,42.7212362 29.8472856,46.010568 32.6749614,48.0010999 Z" id="Rectangle-20" fill="#333333"></path>
+                <path d="M34,3 C34.5522847,3 35,3.44771525 35,4 L35.0004507,28.7495525 C30.9026446,30.3493936 28,34.3353705 28,39 L14,39 C13.4477153,39 13,38.5522847 13,38 L13,4 C13,3.44771525 13.4477153,3 14,3 L34,3 Z" id="Rectangle-21" fill="#91DDF8"></path>
+                <g id="Icon-/-Functional-/-Check-/-18px" transform="translate(17.000000, 17.000000)" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <polyline id="🎨-Icon-Color" transform="translate(7.245267, 4.491613) rotate(86.000000) translate(-7.245267, -4.491613) " points="3.51193381 -1.73060949 7.22630269 2.54001046 10.9786005 6.70427763 6.93646982 10.4847854 6.6915693 10.713835"></polyline>
+                </g>
+                <line x1="20" y1="43" x2="28" y2="43" id="Line-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <g id="Group-24" transform="translate(39.000000, 39.000000) rotate(-270.000000) translate(-39.000000, -39.000000) translate(30.000000, 30.000000)">
+                    <path d="M18,9 L17.9961633,8.73461515 C17.8558068,3.8863919 13.8822321,-2.72848411e-12 9,-2.72848411e-12 C4.029,-2.72848411e-12 0,4.029 0,9 C0,13.971 4.029,18 9,18 C13.971,18 18,13.971 18,9 Z" id="Path" fill="#7849B8" fill-rule="nonzero"></path>
+                    <g id="Group-42" transform="translate(9.000000, 9.000000) rotate(-270.000000) translate(-9.000000, -9.000000) translate(6.500000, 4.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M0.0555926358,7.24846725 C0.297115995,8.09742511 1.29715512,8.73359073 2.49433107,8.73359073 C3.87203326,8.73359073 4.98866213,7.89110039 4.98866213,6.85135135 C4.98866213,5.81235521 3.87203326,4.96911197 2.49433107,4.96911197 C1.11662887,4.96911197 -5.68434189e-14,4.12662162 -5.68434189e-14,3.08687259 C-5.68434189e-14,2.04787645 1.11662887,1.2046332 2.49433107,1.2046332 C3.67645989,1.2046332 4.66637631,1.8254619 4.92360412,2.65808317 M2.53212396,4.53478525e-13 L2.53212396,0.903474903 M2.53212396,9.03474903 L2.53212396,9.93822394" id="Stroke-33"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,619 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: raleway_thin;
+}
+
+
+
+@font-face {
+    font-family: raleway_thin;
+    src: url(fuentes/Raleway_ThinVF.ttf);
+}
+
+
+
+/* -------------------- MENU START -------------------- */
+
+
+header {
+    width: 100%;
+    background-color: #217373;
+    /* Es flex Padre*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center ;
+    /* para que el menu se quede pegado arriba */
+    position: sticky;
+    z-index: 9;
+    top: 0;
+}
+
+/* MENU PRIMERA PARTE */
+
+#menu_logo{
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+#menu_logo img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+#menu_logo a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 0 1px 0 1px;
+    vertical-align: middle;
+}
+
+/* MENU SEGUNDA PARTE */
+
+#menu_bar{
+    background-color: #173540;
+    width: 100%;
+
+}
+
+#menu_links{
+    max-width: 1200px;
+    width: 70%;
+    list-style: none;
+    /* flex padre para los links */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* para mandar al hijo a la derecha */
+    justify-content: flex-end;
+    margin-left: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+ 
+#menu_links a{
+    text-decoration: none;
+    height: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo para los a */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+
+#menu_links a:hover{
+    color: #84b026;
+    transition: 0.5s;
+}
+
+
+
+/* -------------------- MENU END -------------------- */
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+
+ /*-----imagenes1-----*/
+ .caracteristicas {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  gap: 80px; 
+  padding: 30px;
+  flex-wrap: wrap; 
+}
+/* Estilo base para todas las imágenes */
+.img1, .img2, .img3, .img4 {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+  margin: auto;
+}
+
+/* img1: se agranda */
+.img1:hover {
+  transform: scale(1.3);
+}
+
+/* img2:  se alarga horizontalmente*/
+.img2:hover {
+  transform: scaleX(1.5);
+}
+
+/* img3: gira */
+.img3:hover {
+   transform: rotate(360deg);
+}
+
+/* img4: se anche verticalmente */
+.img4:hover {
+  transform: scaleY(1.5);
+}
+
+
+#main p {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 20px;
+  justify-content: center;
+  color: #173540;
+}
+/*--------- fin imagenes 1 -------------------- */
+
+#main h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s ;
+  font-size: 38px;
+  color: #217373;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 66% }
+}
+
+#main h3 {
+  font-size: 38px;
+  color: #217373;
+}
+
+/*------------boton comienzo------------------*/
+.comienzo {
+  position: relative;
+  padding: 18px 30px;
+  font-size: 24px;
+  color: white;
+  background-color: #217373;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+   text-decoration: none;
+
+}
+
+/* Capa para la sombra animada */
+.comienzo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #1735408f; 
+  transition: left 0.4s ;
+}
+
+.comienzo:hover::before {
+  left: 0;
+}
+
+/*------------ fin boton comienzo------------------*/
+
+
+/*------------ boton tiendas------------------*/
+.botones-tienda {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 50px;               
+  padding: 20px;
+}
+
+.boton-tienda img {
+  width: 180px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.boton-tienda img:hover {
+  transform: scale(1.1);
+}
+
+/*------------ fin boton boton tiendas------------------*/
+
+
+
+/*------------ imagenes2 ----------------------------*/
+
+.img-container {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  box-shadow: 6px 6px 12px #173540;
+}
+
+
+.img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+
+}
+
+
+.img-container img.img-hover {
+  opacity: 0;
+}
+
+.img-container:hover img.img-hover {
+  opacity: 1;
+}
+
+.img-container:hover img:not(.img-hover) {
+  opacity: 0;
+}
+
+
+.funciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.funcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150%;
+  max-width: 210px;
+}
+
+
+.p2 {
+  margin-top: 20px;
+  font-size: 25px;
+  background-color: #21737375;
+  padding: 10px;
+  margin: 10px;
+  justify-content: space-between;
+  color: #173540;
+   border-radius: 10px;
+   text-decoration: none;
+}
+.p2:hover{
+  background-color: #217373;
+}
+
+
+/*------------ fin  imagenes2 ----------------------------*/
+
+/* qr */
+.qr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 20px;
+}
+h4{
+  margin-right: 25px;
+}
+.qr h4 {
+  margin: 0;
+  flex: 1;
+  font-size: 150%;
+  color: #173540;
+}
+
+.qr .img8 {
+  max-width: 160px; 
+  height: auto;
+  border-radius: 10px;
+}
+
+.descripcion{
+  text-align: center;
+  margin: 25px;
+  padding: 25px;
+
+}
+
+/* -------------------- FOOTER START -------------------- */
+
+#footer_width{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #173540;
+}
+
+#footer_main{
+    max-width: 1920px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#footer_logo{
+    width: 100%;
+    padding: 25px 20px 0 20px;
+    align-items: center;
+}
+
+#footer_logo img{
+    width: 200px;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+#footer_logo a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#footer_body{
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+#footer_contactos{
+    padding-bottom: 20px;
+}
+
+
+#footer_siguenos{
+    width: 150px;
+    padding: 10px 0 10px 0;
+}
+
+#footer_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#footer_social a{
+    padding: 10px 0 10px 0;
+}
+
+#footer_social img{
+    max-width: 25px;
+}
+
+#footer_links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 50px;
+}
+
+#footer_links a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+#footer_trademark{
+    width: 100%;
+    padding: 0 20px 25px 20px;
+
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 900px){
+    
+    #footer_body{
+    flex-direction: column;
+    }
+
+    
+    #footer_contactos{
+        padding-bottom: 50px;
+    }
+
+    #footer_links{
+        align-items: center;
+    }
+
+    #footer_logo{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #footer_logo img{
+        width: 300px;
+    }
+
+
+    #footer_siguenos{
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    
+    #footer_siguenos h3{
+        text-align: center;
+
+        
+    }
+
+
+}
+/* -------------------- FOOTER END -------------------- */
+
+
+/*celular y tablets*/
+
+
+/* TABLETS (hasta 768px) */
+@media screen and (max-width: 768px) {
+
+
+
+  .caracteristica,
+  .funcion {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .img1, .img2, .img3, .img4 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .img-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .img5, .img6, .img7, .img-hover {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .p2 {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .qr {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .qr h4 {
+    font-size: 18px;
+  }
+
+  .img8 {
+    width: 120px;
+  }
+
+  .boton-tienda img {
+    width: 120px;
+  }
+
+  h2, h3, h4 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .comienzo {
+    font-size: 18px;
+    padding: 15px 25px;
+  }
+
+  .descripcion {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+}
+
+/* CELULARES (hasta 480px) */
+@media screen and (max-width: 480px) {
+  
+  #menu_logo, #footer_logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caracteristicas {
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .img1, .img2, .img3, .img4 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .funciones {
+    gap: 30px;
+    margin-top: 10px;
+  }
+
+  .img-container {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .p2 {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .boton-tienda img {
+    width: 90px;
+  }
+
+  .descripcion {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  h2, h3, h4 {
+    font-size: 20px;
+  }
+
+  .comienzo {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+
+}
+

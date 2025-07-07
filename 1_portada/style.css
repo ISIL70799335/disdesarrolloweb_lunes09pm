@@ -1,0 +1,733 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: raleway_thin;
+}
+
+
+
+@font-face {
+    font-family: raleway_thin;
+    src: url(fuentes/Raleway_ThinVF.ttf);
+}
+
+
+
+/* -------------------- MENU START -------------------- */
+
+header {
+    width: 100%;
+    background-color: #217373;
+    /* Es flex Padre*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center ;
+    /* para que el menu se quede pegado arriba */
+    position: sticky;
+    z-index: 9;
+    top: 0;
+}
+
+/* MENU PRIMERA PARTE */
+
+#menu_logo{
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+#menu_logo img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+#menu_logo a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 0 1px 0 1px;
+    vertical-align: middle;
+}
+
+/* MENU SEGUNDA PARTE */
+
+#menu_bar{
+    background-color: #173540;
+    width: 100%;
+
+}
+
+#menu_links{
+    max-width: 1200px;
+    width: 70%;
+    list-style: none;
+    /* flex padre para los links */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* para mandar al hijo a la derecha */
+    justify-content: flex-end;
+    margin-left: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+ 
+#menu_links a{
+    text-decoration: none;
+    height: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo para los a */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+
+#menu_links a:hover{
+    color: #84b026;
+    transition: 0.5s;
+}
+
+
+/* -------------------- MENU END -------------------- */
+
+
+/* -------------------- MAIN START -------------------- */
+
+main{
+    background-color: lightslategrey;
+}
+
+/* -------------------- MAIN END -------------------- */
+
+
+/* -------------------- CARROUSEL START -------------------- */
+
+
+#car_01, #car_03, #car_05{
+    background-color: #173540;
+    padding: 10px;
+    margin: 5px 30%;
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 50px 20px;
+}
+
+#car_02, #car_04,#car_06{
+    background-color: #217373;
+    padding: 10px;
+    margin: 5px 25%;
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 50px 20px;
+}
+
+
+
+ 
+/* #car_01:hover, #car_02:hover, #car_03:hover, #car_04:hover, #car_05:hover, #car_06:hover{
+    transform: scale(1.01);
+} */
+
+.carousel_text:hover{
+    transform: scale(1.01);
+    box-shadow: 0 2px 1px black;
+    transition: 0.1s;
+}
+
+
+.carousel-inner img{
+    max-height: 500px;
+    object-fit: cover;
+    opacity: 0.75;   
+}
+
+
+
+/* -------------------- CARROUSEL END -------------------- */
+
+
+
+/* -------------------- NOVEDADES START -------------------- */
+
+#novedades_main{
+    width: 100%;
+    background-color: white ;
+
+    /* como flex padre */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    font-weight: 500;
+    color: white;
+}
+
+
+#novedades_header h2{
+    color: black;
+    text-align: center;
+    padding: 50px 0 20px 0;
+
+}
+
+#novedades_body{
+    max-width: 1920px;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* flex de novedades body */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.novedades_content{
+    width: 31%;
+    /* quiero que todo este contenido, sea flex, centrado */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* para que pueda mover el boton abajo de la caja contenedora */
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.novedades_content:hover{
+    transform: scale(1.1);
+}
+
+
+.novedades_content img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.novedades_content p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #217373;
+}
+
+
+.novedades_content a{
+    background-color: #173540;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    max-width: 100px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.1s;
+    /* para mover la caja fuera del contenedor */
+    position: absolute;
+    bottom: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;  
+}
+
+.novedades_content a:hover{
+    background-color: #031217;
+    transform: scale(1.01);
+    box-shadow: 0 1px 1px #4c8181;
+}
+
+#novedades_footer{
+    max-width: 1920px;
+    width: 80%;
+    padding-top:20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* para mandar al hijo a la derecha */
+    justify-content: flex-end;
+}
+
+#novedades_footer a{
+    background-color: #173540;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.1s;
+}
+
+
+#novedades_footer a:hover{
+    background-color: #031217;
+    transform: scale(1.01);
+    box-shadow: 0 1px 1px #4c8181;
+}
+
+/* novedades responsive */
+
+@media screen and (max-width: 900px){
+    
+    #novedades_body{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .novedades_content{
+        max-width: 80%;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+/* -------------------- NOVEDADES END -------------------- */
+
+
+
+/* -------------------- BUSCANOS START -------------------- */
+
+#buscanos_main{
+    background-image: none;
+    background-color: #4c8181;
+    width: 100%;
+    height: 500px;
+/*    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+
+}
+
+#mapa{
+    width: 100%;
+    height: 100%;
+    position: absolute
+}
+
+#mapa iframe{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+}
+
+#mapa a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #84b026;
+    color: black;
+    align-content: center;
+
+    height: 50px;
+    width: 350px;
+    position: absolute;
+    bottom:5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+    box-shadow: 0 1px 5px black;}
+
+#atencion_antes{
+       opacity: 1; 
+}
+
+#atencion_antes:hover{
+       opacity: 0; 
+}
+
+#atencion_despues{
+       opacity: 0; 
+}
+
+#atencion_despues:hover{
+       opacity:1; 
+}
+
+/* -------------------- BUSCANOS END -------------------- */
+
+
+
+
+/* -------------------- BLOG START -------------------- */
+
+#blog_main{
+    width: 100%;
+    background-color:white;
+    padding: 50px 0 70px 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    font-weight: 500;
+
+}
+
+#blog_header{
+    max-width: 1920px;
+    width: 90%;
+}
+
+#blog_header h2{
+    padding-left: 5%;
+    padding-bottom: 30px;
+
+}
+
+#blog_content{
+    max-width: 1920px;
+    width: 90%;
+    /* flex padre del contenido */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+
+#blog_content_a{
+    /*como flex hijo del blog_content*/
+    flex-basis: 40%;
+    width: 100%;
+    height:400px;
+
+    /* padding  top, right , bottom, left */
+    padding: 10px 10px 10px 20px;
+
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    justify-content: center;
+    
+    /* lo centra, pero achica el box de color --> align-self: center; */
+}
+
+.blog_content_a_box{
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    background-image: none;
+    background-color: #217373;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+    transition: 0.5s;
+}
+
+.blog_content_a_box:hover{
+    background-color: #173540; 
+    transform: scale(1.1);
+    box-shadow: 0 1px 1px;
+}
+
+
+.blog_content_a_box img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.blog_content_a_box p{
+    width: 100%;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+#blog_content_b{
+    height: 400px;
+
+    /* padding  top, right , bottom, left */
+    padding: 10px 20px 10px 10px;
+
+    /* como flex padre */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    /* como flex hijo */
+    flex-basis: 60%;
+    
+
+}
+
+.blog_content_b_box{
+    max-width: 800px;
+    width: 100%; 
+    background-color: #217373;
+    max-height:400px;
+    height: 200px; 
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.blog_content_b_box:hover{
+    background-color: #173540; 
+    transform: scale(1.1);
+    box-shadow: 0 1px 1px;
+}
+
+
+.blog_content_b_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog_content_b_box p{
+    padding: 20px;
+    background-color: #217373;
+    color: white;
+
+    position: absolute;
+    bottom:0;
+    right:0;
+
+}
+
+
+.blog_content_b_box p:hover{
+    background-color: #173540; 
+}
+
+
+
+@media screen and (max-width: 900px){
+    
+    #blog_content{
+    flex-direction: column;
+
+    }
+
+    #blog_content_a{
+    width: 100%;  
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    }
+
+
+    #blog_content_a_box{
+    width: 100%;
+    max-width: 100%;
+    }
+
+    #blog_content_b{
+    max-width: 100%;
+    width: 100%;
+    padding: 0 0px;
+    max-height: 900px;
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    }
+
+    #blog_content_b_box{
+    max-width: 100%;
+    height: 400px;
+    padding: 0;
+    margin-bottom: 10px;
+    }
+
+}
+
+/* -------------------- BLOG END -------------------- */
+
+
+
+
+/* -------------------- FOOTER START -------------------- */
+
+#footer_width{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #173540;
+}
+
+#footer_main{
+    max-width: 1920px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#footer_logo{
+    width: 100%;
+    padding: 25px 20px 0 20px;
+    align-items: center;
+}
+
+#footer_logo img{
+    width: 200px;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+#footer_logo a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#footer_body{
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+#footer_contactos{
+    padding-bottom: 20px;
+}
+
+
+#footer_siguenos{
+    width: 150px;
+    padding: 10px 0 10px 0;
+}
+
+#footer_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#footer_social a{
+    padding: 10px 0 10px 0;
+}
+
+#footer_social img{
+    max-width: 25px;
+}
+
+#footer_links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 50px;
+}
+
+#footer_links a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+#footer_trademark{
+    width: 100%;
+    padding: 0 20px 25px 20px;
+
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 900px){
+    
+    #footer_body{
+    flex-direction: column;
+    }
+
+    
+    #footer_contactos{
+        padding-bottom: 50px;
+    }
+
+    #footer_links{
+        align-items: center;
+    }
+
+    #footer_logo{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #footer_logo img{
+        width: 300px;
+    }
+
+
+    #footer_siguenos{
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    
+    #footer_siguenos h3{
+        text-align: center;
+
+        
+    }
+
+
+}
+
+/* -------------------- FOOTER END -------------------- */
+
+
+/* En teoria, todo deberia estar con un maximo de FHD para que funcione bien
+@media(max-width:1920px){
+
+} 
+*/
